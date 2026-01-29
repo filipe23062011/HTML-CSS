@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        /*
+         medidas absolutas:
+
+        cm (centímetros), mm(milímetros), in (ou polegada), px(pixel), pt(ponto), pc(paica).
+
+        medidas relativas:
+
+        em(medida relativa ao tamanho atual da fonte), ex(altura x de uma fonte), rem(relativo a fonte que tá configurada no body), vw(largura da view port), vh(altura da view port), %(porcentagem).
+         16px geralmente = em
+        */
+
+
+
+            font-size: 1em;
+            /* font-weight: normal;
+            font-style: italic;
+            text-decoration: underline; */
+        }
+        /* h1,h2{
+            font-family: 'Times New Roman', Times, serif
+            
+            ;
+        } */
+         h1{
+          /* font-family: 'work sans', sans-serif;  
+          font-weight: bolder;
+          font-size: 3em;
+          font-style: italic; */
+          /* shorthand font 
+
+          -font-style -> font-weight-> font-size-> font-family */
+          font: italic bolder 3em 'work sans', sans-serif;
+         }
+
+         h2{
+            font: bold 2em 'work sans';
+         }
+    </style> 
+</head>
+<body>
+    <h1>Trabalhando Com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quis fuga et tempore molestiae? Ea aut error sint dignissimos tenetur, ipsum aperiam ab eligendi molestiae eveniet! Labore illo quisquam et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa doloribus hic ratione debitis inventore itaque repudiandae suscipit consequuntur dolorem unde sunt iste similique, voluptas molestiae quisquam voluptates amet sit laborum Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto laudantium maiores. Nesciunt tempore doloremque quam dolorem possimus numquam dolore vel consectetur praesentium aspernatur, dignissimos, odit enim quas ut ad? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, earum doloremque reiciendis minima veniam debitis eaque delectus rerum quidem mollitia blanditiis dolores! Praesentium error recusandae repellendus qui commodi. Sunt, obcaecati.</p>
+    <h2>Sub Título Do Exercício </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto ea necessitatibus modi! Nobis cupiditate libero nisi modi repellat dolorum. Blanditiis autem eligendi provident? Esse, quasi quae. Earum, ratione itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat, rerum ipsa inventore fuga necessitatibus possimus, voluptas nesciunt quaerat voluptatibus reprehenderit delectus at odit tempora magni ea molestiae, quasi quas?</p>
+</body>
+</html>

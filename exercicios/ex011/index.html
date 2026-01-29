@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-cursoemvídeo.png" type="image/x-icon">
+    <title>mídeas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+
+       <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+       <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+       <img src="imagens/foto-g.png" alt="imagem flexível">
+<!--para fazer uma imagem flexivel você precisa usar a teg <img> e encima dela usar as tegs <source midia=> em ordem dependendo de quantos arquivos for carregar do maior para o menor! -->
+    </picture>
+
+    <h1>Introduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midea/happy-mistake.mp3" controls autoplay></audio>-->
+
+    <!--MP3 WAV OGG-->
+<audio preload="metadata"autoplay controls loop> <!-- o preload serve para o dowload do áudio no alicativo é melhor botar 'metedata' o autoplay serve para assim que começar o programa começar a tocar a musica sozinho 'mas não funcionou kkk' o controls serve para aparecer o controle do áudio na tela e o loop serve para quando o áudio acabar tocar de novo automáticamente.-->
+    <source src="midea/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midea/guanacast-33.ogg" type="audio/ogg">
+    <source src="midea/guanacast-33.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="">clique aqui para baixar o arquivo mp3</a></p>
+<!--para botar audio usar a teg <audio>.-->
+</audio>
+</body>
+</html>
